@@ -1,0 +1,137 @@
+:root{
+	--pcolor:rgb(126, 249, 255);
+	--scolor:rgb(111, 111, 243);
+	--acolor:aliceblue;
+	--acolor2:#ffffff;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Molengo", serif;
+}
+img{
+	max-width: 8rem;
+	height: auto;
+}
+body{
+	max-width: 90%;
+	margin: auto;
+	background: radial-gradient(circle, white, rgb(215, 236, 255));
+}
+header{
+	display: grid;
+	background-color: var(--pcolor);
+	margin: auto;
+}	
+h1{
+	margin: auto;
+}
+#menu ul{
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+}
+#menu ul li{
+	width: 100%;
+	text-align: center;
+}
+#menu ul li a{
+	text-decoration: none;
+	color: black;
+	display: block;
+	width: 100%;
+	padding: .5rem;
+}
+#menu ul li a:hover{
+	background-color: rgb(0, 39, 71);
+	color: white;
+}
+#menu{
+	background-color: var(--acolor);
+}
+#index{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 1rem;
+	margin: 1rem;
+}
+.card{
+	border: 1px solid black;
+	border-radius: 15px;
+	margin-top: 1rem;
+	padding: .5rem;
+	overflow: hidden;
+	display: grid;
+}
+.sectiontitle{
+	background-color: var(--scolor);
+	display: block;
+	width: 110%;
+	padding: 1rem;
+	margin: -1rem;
+	margin-bottom: 0;
+	text-align: center;
+	height: auto;
+	box-sizing: unset;
+}
+#s1{
+	grid-template-areas:
+	"title title title title"
+	"text text text pic"
+	"t2 t2 t2 pic"
+	"flag txt2 txt2 txt2";
+	gap: 1rem;
+	justify-items: center;
+}
+#stitle{
+	grid-area: title;
+}
+#desc{
+	grid-area: text;
+}
+#ppicture{
+	grid-area: pic;
+	margin-top: 1.5rem;
+}
+#mxtitle{
+	grid-area: t2;
+}
+#mx{
+	grid-area: txt2;
+}
+#flag{
+	grid-area: flag;
+	margin: auto;
+}
+#flag img{
+	display: block;
+	margin: auto;
+}
+#s2{
+	display: inline;
+}
+#s2 ul{
+	list-style-position: inside;
+	display: block;
+	margin: auto;
+	height: 100%;
+	margin-top: 35%;
+	margin-bottom: 35%;
+}
+footer{
+	margin-top: 2rem;
+	padding: 1rem;
+	background-color: var(--pcolor);
+	font: bolder;
+}
+footer p{
+	display: block;
+	margin: auto;
+	width: fit-content;
+}
+@media (max-width: 640px) {
+	#menu ul{
+		display: inline;
+	}
+}

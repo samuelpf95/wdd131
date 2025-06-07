@@ -1,0 +1,98 @@
+:root{
+	--pcolor:#006847;
+	--scolor:#CE1126;
+	--acolor:aliceblue;
+	--acolor2:#ffffff;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Molengo", serif;
+    font-size: x-large;
+}
+header{
+	display: block;
+	background-color: var(--pcolor);
+	margin: auto;
+    padding: 1rem 0;
+    text-align: center;
+}
+h1{
+    font-size: 3rem;
+    color: var(--acolor2);
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.hero img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+section {
+    position: relative;
+    padding: 1rem;
+    background-color: #ffffffbb;
+    margin: auto;
+}
+section ul{
+    list-style: none;
+}
+#cicon{
+    max-width: 250px;
+}
+#emote{
+    display: none;
+    font-weight: 200;
+}
+@media (min-width: 640px) {
+    main{
+        display: inline;
+        position: relative;
+    }
+    #section1{
+        top: 5%;
+        left: 10%;
+    }
+    #section2{
+        top: 70%;
+        left: 75%;
+    }
+    .hero img{
+        max-width: 90%;
+    }
+    section h2{
+        display: block;
+        background-color: var(--scolor);
+        padding: .5rem 1rem .5rem 2rem;
+        margin: -.5rem 1rem .5rem -2rem;
+    }
+    #emote{
+        display: inline;
+        font-family: system-ui, "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+    }
+    #cicon{
+        display: none;
+    }
+    section{
+    background-color: #ffffffbb;
+    position:absolute;
+    padding: 1rem;
+    }
+}
+footer{
+	margin-top: 2rem;
+	padding: 1rem;
+	background-color: var(--scolor);
+	font: bolder;
+}
+footer p{
+	display: block;
+	margin: auto;
+	width: fit-content;
+}
+.bold{
+    font-weight: bold;
+}

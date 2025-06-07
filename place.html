@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="WDD 131 – Dynamic Web Fundamentals - Samuel Pacheco">
+    <meta name="description" content="Home page of WDD 131 – Dynamic Web Fundamentals | Samuel Pacheco">
+    <meta name="author" content="Samuel Pacheco">
+    <link rel="stylesheet" href="styles/places.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Molengo&display=swap" rel="stylesheet">
+    <title>WDD 131 – Dynamic Web Fundamentals - Samuel Pacheco</title>
+</head>
+<body>
+    <header>
+        <h1>México</h1>
+    </header>
+    <main>
+        <picture class="hero">
+            <source srcset="images/hero_image.webp" media="(min-width: 640px)">
+            <img src="images/small_pyramid.webp" alt="Pyramids in Mexico">
+        </picture>
+        <section id="section1">
+            <h2>Data</h2>
+            <ul>
+                <li><span class="bold">Area: </span>1,964,375 sq km</li>
+                <li><span class="bold">Population: </span>126,014,024</li>
+                <li><span class="bold">Capital: </span>Mexico City</li>
+                <li><span class="bold">Languages: </span>Spanish</li>
+                <li><span class="bold">Currency: </span>Mexican Peso</li>
+                <li><span class="bold">Time Zone: </span>UTC -6</li>
+                <li><span class="bold">Calling code: </span>+52</li>
+                <li><span class="bold">Internet TLD: </span>.mx</li>
+            </ul>
+        </section>
+        <section id="section2">
+            <h2>Weather <span id="emote">&#127781;</span></h2>
+            <img src="images/cloudy.svg" alt="cloudy icon" id="cicon">
+            <ul>
+                <li><span class="bold">Temperature: </span><span id="temp">26</span> °C</li>
+                <li><span class="bold">Conditions: </span>Partly Cloudy</li>
+                <li><span class="bold">Wind: </span><span id="wspeed">15</span> Km/h</li>
+                <li><span class="bold">Wind Chill: </span><span id="wchill"></span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p class>
+            &copy; <span id="currentyear"></span>
+            Samuel Pacheco, México, 
+        </p>
+        <p id="lastModified">
+        </p>
+    </footer>
+</body>
+</html>

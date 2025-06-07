@@ -60,6 +60,10 @@ section ul{
         top: 70%;
         left: 75%;
     }
+    #section2 h2::after{
+        content: "\1F325";
+        font-family: system-ui, "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+    }
     .hero img{
         max-width: 90%;
     }

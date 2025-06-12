@@ -1,0 +1,27 @@
+@media (min-width: 740px) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+        padding: 1rem;
+        margin-bottom: 1rem;
+	}
+    header h1{
+        display: block;
+        padding-left: 10%;
+    }
+	nav ul {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+
+	}
+    #hamburger{
+        display: none;
+    }
+    .hidden{
+        display: unset;
+    }
+}

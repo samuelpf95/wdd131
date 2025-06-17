@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="WDD 131 – Dynamic Web Fundamentals - Form | Samuel Pacheco">
+    <meta name="description" content="Form – Dynamic Web Fundamentals | Places - Samuel Pacheco">
+    <meta name="author" content="Samuel Pacheco">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Molengo&display=swap" rel="stylesheet">
+    <title>Product Review</title>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label for="product">Product Name</label><br>
+            <select name="product" id="product" required></select>
+            <p>Overall Rating</p>
+            <div id="or">
+                <div class="rating-item">
+                    <label for="1">⭐</label>
+                    <input type="radio" name="rating" id="1" value="1" required>
+                </div>
+                <div class="rating-item">
+                    <label for="2">⭐⭐</label>
+                    <input type="radio" name="rating" id="2" value="2">
+                </div>
+                <div class="rating-item">
+                    <label for="3">⭐⭐⭐</label>
+                    <input type="radio" name="rating" id="3" value="3">
+                </div>
+                <div class="rating-item">
+                    <label for="4">⭐⭐⭐⭐</label>
+                    <input type="radio" name="rating" id="4" value="4">
+                </div>
+                <div class="rating-item">
+                    <label for="5">⭐⭐⭐⭐⭐</label>
+                    <input type="radio" name="rating" id="5" value="5">
+                </div>
+            </div>
+            <label for="date">Date of Installation</label><br>
+            <input type="date" name="date" id="date" required>
+            <p>Which Features did you find useful in the product? <i><br>(Check all that apply)</i></p>
+            <div>
+                <input type="checkbox" name="features" id="Durability" value="Durability">
+                <label for="Durability">Durability</label><br>
+
+                <input type="checkbox" name="features" id="EaseOfUse" value="Ease of Use">
+                <label for="EaseOfUse">Ease of Use</label><br>
+
+                <input type="checkbox" name="features" id="Performance" value="Performance">
+                <label for="Performance">Performance</label><br>
+
+                <input type="checkbox" name="features" id="Design" value="Design">
+                <label for="Design">Design</label><br>
+            </div>
+            <p>Written Review <span>(optional)</span></p>
+            <textarea name="wr" id="wr" rows="4" cols="50" resize="both"></textarea><br>
+            <p>Your Name<span>(optional)</span></p>
+            <input type="text" name="name" id="name"><br>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p class>
+            &copy; <span id="currentyear"></span>
+            Samuel Pacheco, México,
+        </p>
+        <p id="lastModified">
+        </p>
+    </footer>
+</body>
+
+</html>

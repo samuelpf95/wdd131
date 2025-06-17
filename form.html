@@ -23,7 +23,7 @@
     <main>
         <form action="review.html" method="get">
             <label for="product">Product Name</label><br>
-            <select name="product" id="product" required></select>
+            <select name="product" id="product"></select>
             <p>Overall Rating</p>
             <div id="or">
                 <div class="rating-item">
@@ -63,9 +63,9 @@
                 <input type="checkbox" name="features" id="Design" value="Design">
                 <label for="Design">Design</label><br>
             </div>
-            <p>Written Review <span>(optional)</span></p>
-            <textarea name="wr" id="wr" rows="4" cols="50" resize="both"></textarea><br>
-            <p>Your Name<span>(optional)</span></p>
+            <label for="wr">Written Review <span>(optional)</span></label>
+            <textarea name="wr" id="wr" rows="4" cols="50"></textarea><br>
+            <label for="name">Your Name<span>(optional)</span></label>
             <input type="text" name="name" id="name"><br>
             <input type="submit" value="Post Review">
         </form>

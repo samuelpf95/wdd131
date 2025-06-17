@@ -68,7 +68,8 @@ label {
 
 input[type='text'],
 textarea,
-select {
+select,
+input[type='date']{
     margin-bottom: 1rem;
     width: 100%;
 }

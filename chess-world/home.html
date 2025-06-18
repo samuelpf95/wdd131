@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page from World of Chess project">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Molengo&display=swap" rel="stylesheet">
+    <script src="scripts/visit.js" defer></script>
+    <script src="scripts/ranking.js" defer></script>
+    <script src="scripts/recommendation.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="icon" href="images/icon.ico">
+    <title>World of Chess| Home page</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <div>
+                <img src="images/logo.webp" alt="logo">
+            </div>
+            <div>
+                <h1>World of Chess</h1>
+                <p>Chess News</p>
+            </div>
+        </div>
+        <button id="hamburger" class="" aria-label="Toggle navigation menu"><span></span></button>
+        <nav id="menu" class="hidden">
+            <ul>
+                <li><a href="#" class="alink">Home</a></li>
+                <li><a href="players.html">Top Players</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div>
+                <h2>Magnus Carlsen slams table after shock loss to Gukesh Dommaraju in Norway</h2>
+                <p>The 34-year-old resigned shortly after then slammed his fist on the table, sending pieces rattling.
+                    It was an uncharacteristic display from the typically composed five-time world champion, who left
+                    the hall immediately and skipped his media duties.</p>
+            </div>
+            <picture class="heroimg">
+                <source srcset="images/hero-image.webp" media="(min-width: 1150px)">
+                <source srcset="images/hero-mid.webp" media="(min-width: 600px)">
+                <img src="images/hero-small.webp" alt="Magnus Carlsen">
+            </picture>
+        </div>
+        <div class="sec">
+            <div>
+                <h3>Next Tournaments</h3>
+                <p>Here, you can stay up to date with all major chess tournaments from around the world. Follow your
+                    favorite players, catch the most exciting games, and dive into expert analysis—all in one place.
+                    Whether you're a seasoned player or a curious fan, this is your go-to spot for everything happening
+                    in the world of chess.</p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="https://www.chess.com/events/info/2025-uzchess-cup">
+                            <div class="tournament">
+                                <picture>
+                                    <source srcset="images/uzchess-mid.webp" media="(min-width:800px)"><img
+                                        src="images/uzchess.webp" alt="UzChess cup">
+                                </picture>
+                                <h3>2nd UzChess Cup 2025</h3>
+                                <p>18 jun 2025 – 27 jun 2025</p>
+                            </div>
+                        </a></li>
+                    <li><a href="https://www.chess.com/es/events/2025-bullet-chess-championship">
+                            <div class="tournament">
+                                <picture>
+                                    <source srcset="images/bullet-mid.webp" media="(min-width:800px)"><img
+                                        src="images/bullet.webp" alt="Bullet cup">
+                                </picture>
+                                <h3>Bullet Chess Championship 2025</h3>
+                                <p>23 jun 2025 – 28 jun 2025</p>
+                            </div>
+                        </a></li>
+                    <li><a href="https://www.chess.com/es/events/2025-gct-superunited-croatia-rapid-blitz">
+                            <div class="tournament">
+                                <picture>
+                                    <source srcset="images/blitz-mid.webp" media="(min-width:800px)"><img
+                                        src="images/blitz.webp" alt="Blitz cup">
+                                </picture>
+                                <h3>Grand Chess Tour: SuperUnited Croatia Rapid & Blitz 2025</h3>
+                                <p>2 jul 2025 – 6 jul 2025</p>
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="images/logo.webp" alt="Logo" class="logo">
+        <p>Follow us in our social media!</p>
+        <div>
+            <a href="http://www.fb.com"><img src="images/facebook_icon.png" alt="Facebook" loading="lazy"></a>
+            <a href="http://www.x.com"><img src="images/x_icon.png" alt="Twitter" loading="lazy" id="tw"></a>
+            <a href="http://www.instagram.com"><img src="images/instagram_icon.png" alt="Instagram" loading="lazy"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

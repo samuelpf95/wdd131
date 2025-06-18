@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Molengo", serif;
+    list-style: none;
 }
 body{
     background:radial-gradient(circle, rgb(0, 0, 0), rgb(0, 0, 0), black, rgb(0, 0, 0), rgb(248, 248, 248), rgb(7, 7, 7), rgb(71, 71, 71));

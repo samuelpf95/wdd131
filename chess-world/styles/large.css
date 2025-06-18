@@ -1,0 +1,73 @@
+@media (min-width: 800px) {
+    .hero {
+        flex-direction: row;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    main {
+        max-width: 90%;
+    }
+
+    .tournament img {
+        width: 800px;
+        min-width: 650px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    header {
+        flex-direction: row;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .hidden {
+        display: inline;
+    }
+
+    form {
+        display: grid;
+        grid-template-areas:
+            "fieldset title"
+            "fieldset donation"
+            "button button";
+        gap: 1rem;
+        width: 100%;
+        font-size: 1.5rem;
+        justify-content: space-between;
+    }
+
+    #donation {
+        grid-area: donation;
+        padding: 1rem;
+    }
+
+    form h2 {
+        grid-area: title;
+    }
+
+    form fieldset {
+        grid-area: fieldset;
+    }
+
+    #donation+label {
+        grid-area: button;
+    }
+    #quantityText {
+    margin-left: 2rem;
+    }
+}

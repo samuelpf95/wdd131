@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page from World of Chess project">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Molengo&display=swap" rel="stylesheet">
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="icon" href="images/icon.ico">
+    <title>World of Chess| Home page</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <div>
+                <img src="images/logo.webp" alt="logo">
+            </div>
+            <div>
+                <h1>World of Chess</h1>
+                <p>Chess News</p>
+            </div>
+        </div>
+        <button id="hamburger" class="" aria-label="Toggle navigation menu"><span></span></button>
+        <nav id="menu" class="hidden">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="players.html">Top Players</a></li>
+                <li><a href="#" class="alink">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+         <main class="MainJoin">
+        <h1 id="regj">Registration</h1>
+        <form method="get" action="../chess-world/welcome.html" class="mainform">
+            <fieldset>
+                    <label>
+                    First Name:
+                    <input 
+                      type="text" 
+                      name="firstName" 
+                      title="Please enter your first name" 
+                      required 
+                      autocomplete="given-name">
+                    </label>
+                  
+                    <label>
+                    Last Name:
+                    <input 
+                      type="text" 
+                      name="lastName" 
+                      title="Please enter your last name" 
+                      required 
+                      autocomplete="family-name">
+                    </label>
+                  
+                    <label>
+                    Nickname (Showing name):
+                    <input 
+                      type="text" 
+                      name="Nickname" 
+                      title="Please nter your nickname" 
+                      required
+                      autocomplete="nickname">
+                    </label>                   
+                    <label>
+                    Email Address:
+                    <input 
+                      type="email" 
+                      name="email" 
+                      title="Please enter your email address" 
+                      required 
+                      autocomplete="email" 
+                      placeholder="example@example.com">
+                  </label>
+                  
+                  <label>
+                    Password:
+                    <input 
+                      type="password" 
+                      id="password"
+                      name="password" 
+                      title="Please enter your password (min 8 characters)" 
+                      required 
+                      pattern=".{8,}">
+                  </label>
+                  
+                  <label>
+                    Favorite Player
+                    <input 
+                      type="text" 
+                      id="confirmPassword"
+                      name="confirmPassword" 
+                      required>
+                  </label>
+                  <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+                <h2>Donation</h2>
+                <fieldset id="donation">
+                    <label class="rinp"><input type="radio" name="donation" value="none :C" checked> Nothing, create my account only</label>
+                    <label class="rinp"><input type="radio" name="donation" value="$5"> $5. Thank you!</label>
+                    <label class="rinp"><input type="radio" name="donation" value="$10"> $10. Thank you!</label>
+                    <label class="rinp">
+                      <input type="radio" name="donation" value="other"> Other:
+                      <input type="number" id="quantityText" step="0.01" inputmode="decimal" disabled>
+                    </label>
+                  </fieldset>
+            <label><input aria-label="Create Account" type="submit" value="Create Account" id="submit"></label>
+        </form>
+        <h2>Random recommendation!</h2>
+        <div id="recom"></div>
+    </main>
+    </main>
+        <footer>
+        <img src="images/logo.webp" alt="Logo" class="logo">
+        <p>Follow us in our social media!</p>
+        <div>
+            <a href="http://www.fb.com"><img src="images/facebook_icon.png" alt="Facebook" loading="lazy"></a>
+            <a href="http://www.x.com"><img src="images/x_icon.png" alt="Twitter" loading="lazy" id="tw"></a>
+            <a href="http://www.instagram.com"><img src="images/instagram_icon.png" alt="Instagram" loading="lazy"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

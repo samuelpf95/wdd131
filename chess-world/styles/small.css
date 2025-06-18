@@ -1,0 +1,270 @@
+:root{
+    --pcolor:#084c61;
+    --scolor:#5E7CFF;
+    --acolor2:#FFFFFF;
+    --acolor:#000000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Molengo", serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background:radial-gradient(circle, rgb(0, 0, 0), rgb(0, 0, 0), black, rgb(0, 0, 0), rgb(248, 248, 248), rgb(7, 7, 7), rgb(71, 71, 71));
+    color: var(--acolor);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    background-color:var(--acolor);
+    color: var(--acolor2);
+    margin: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    box-shadow: var(--acolor) 0px 0px 10px 1px;
+    justify-content: space-around;
+}
+#logo{
+    display: flex;
+    margin: 0;
+}
+#logo img{
+    max-width: 12rem;
+    height: auto;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--acolor2);
+    border-radius: 15px;
+    box-shadow: var(--acolor2) 0px 0px 10px 1px;
+}
+nav ul li{
+    padding: 1rem;
+}
+nav ul li:hover{
+    background-color: var(--scolor);
+    cursor:pointer;
+    border-radius: 15px;
+}
+nav ul li a{
+    color: var(--acolor);
+    padding: 1rem 2rem;
+    margin: 0;
+    font-weight: bolder;
+}
+#hamburger{
+    display: inline;
+}
+#hamburger span::before{
+    content: "\2630";
+    font-size: 2rem;
+}
+#hamburger{
+    width: 44px;
+    height: 44px;
+    background-color: var(--acolor2);
+    border: none;
+    position: absolute;
+    top: 2%;
+    left: 80%;
+    color: var(--acolor);
+}
+#hamburger:hover{
+    cursor: pointer;
+    background-color: rgb(223, 223, 223);
+    border-radius: 15px;
+}
+#hamburger.hidden span::before{
+    content: "X";
+}
+.hidden{
+    display: none;
+}
+main{
+    margin: auto;
+}
+.hero, .sec{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--acolor);
+    color: var(--acolor2);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 15px;
+    box-shadow: var(--scolor) 0px 0px 10px 0px;
+    align-items: center;
+    
+}
+
+.heroimg {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+.heroimg img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+div{
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+.tournament img{
+    display: block;
+    margin: 1rem auto;
+    box-shadow: var(--acolor2) 0px 0px 10px 0px;
+    max-width: 100%;
+    height: auto;
+}
+.tournament{
+    background-color: #111111;
+    margin: 1rem 0;
+    color: var(--acolor2);
+    border-radius: 15px;
+    padding: 1rem;
+}
+footer{
+
+    background-color: var(--acolor);
+    max-width: 90%;
+    margin: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    box-shadow: var(--acolor2) 0px 0px 10px 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--acolor2);
+}
+footer img{
+    background-color: var(--acolor);
+    max-width: 5rem;
+    margin: 0   2rem;
+}
+#tw{
+    background-color: var(--acolor2);
+    border-radius: 15px;
+}
+footer p{
+    margin-bottom: 2rem;
+}
+.logo{
+    max-width: 12rem;
+    height: auto;
+}
+.alink{
+    text-decoration: underline;
+    font-weight: 900;
+}
+#players {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    place-items: center;
+}
+section{
+    background:radial-gradient(circle, rgb(0, 0, 0), rgb(0, 0, 0), black, rgb(0, 0, 0), rgb(0, 0, 0), rgb(7, 7, 7), rgb(29, 23, 23));
+    color: var(--acolor2);
+    height: 100%;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid var(--scolor);
+    width: 100%;
+}
+#top, #ty{
+    background-color: var(--acolor);
+    color: var(--acolor2);
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+}
+#filters button{
+    padding: .5rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 2rem;
+    font-weight: bold;
+    box-shadow: 0 0 10px 0 white;
+    border: 1px solid rgb(173, 173, 173);
+    margin-top: 1rem;
+    font-size: large;
+    margin-bottom: 2rem;
+}
+#results {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    width: 80%;
+    max-width: 600px;
+    margin: 2rem auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0  0 4px 8px rgb(255, 255, 255);
+    font-size:xx-large;
+}
+.mainform label input{
+    margin-bottom: .5rem;
+    width: 100%;
+}
+.mainform fieldset{
+    display: grid;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    background-color: var(--acolor);
+    color: var(--acolor2);
+    padding: 1rem;
+}
+.mainform fieldset label{
+    display: grid;
+    width: 100%;
+}
+.mainform textarea{
+    width: 100%;
+    min-height: 80px;
+}
+#submit, .info-btn{
+    padding: .5rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 2rem;
+    font-weight: bold;
+    box-shadow: 0 0 10px 0 var(--acolor2);
+    border: 1px solid rgb(173, 173, 173);
+    margin-top: 1rem;
+}
+#submit:hover, .info-btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px var(--acolor2);
+}
+button:active{
+    background-color: rgb(190, 190, 190);
+}
+#donation{
+    padding: 1rem 0;
+}
+#donation label{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: .5rem 0;
+}
+#quantityText {
+    grid-column: 1/-1;
+    width: 90%;
+}
